@@ -61,8 +61,9 @@ class SearchInputState extends State<SearchInput> {
           SizedBox(width: 8),
           Expanded(
             child: TextField(
-              decoration: InputDecoration(hintText: "Search place", border: InputBorder.none),
+              decoration: InputDecoration(hintText: "Pesquisar por um lugar", border: InputBorder.none),
               controller: this.editController,
+              style: TextStyle(color: Colors.black)
               onChanged: (value) {
                 setState(() {
                   this.hasSearchEntry = value.isNotEmpty;
